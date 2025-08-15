@@ -17,7 +17,7 @@ export default function Hero() {
         <SubTitle>
           A Web Developer with{" "}
           <span className="bg-gray-800 text-yellow-500 px-3 py-1 rounded-full">
-            3.2+ Years
+            5+ Years
           </span>{" "}
           Experience
         </SubTitle>
@@ -36,11 +36,11 @@ export default function Hero() {
 
       <div className="mt-20 relative w-fit mx-auto">
         <img
-          src="/man.png"
+          src="/foto.png"
           alt="programmer"
-          className="w-full max-w-[450px] mx-auto"
+          className="w-full max-w-[550px] mx-auto rounded-full border-[6px] border-yellow-500 p-2"
         />
-        <div className="absolute top-0">
+        {/* <div className="absolute top-2">
           <ItemStack image="react.png" text="React JS" />
         </div>
         <div className="absolute top-3 right-20">
@@ -56,7 +56,7 @@ export default function Hero() {
           <div className="absolute bottom-10">
             <ItemStack image="tailwind.png" text="Tailwind" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
