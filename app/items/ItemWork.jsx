@@ -1,6 +1,6 @@
 export default function ItemWork({ text = "" }) {
   return (
-    <div className="bg-white bg-opacity-10 w-fit px-4 py-1 rounded-full">
+    <div className="bg-white/10 backdrop-blur-md border border-white/10 text-white/80 text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wider">
       {text}
     </div>
   );

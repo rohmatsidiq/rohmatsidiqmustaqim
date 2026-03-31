@@ -18,7 +18,7 @@ export default function page() {
     });
   }, []);
   return (
-    <div>
+    <div className="max-w-screen overflow-x-hidden">
       <Hero />
       <AboutMe />
       <Experience />
