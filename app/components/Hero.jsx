@@ -21,7 +21,7 @@ export default function Hero() {
 
           <div className="mt-4">
             <SubTitle>
-              A Web Developer with{" "}
+              A Software Engineer with{" "}
               <span className="bg-yellow-500/10 text-yellow-500 border border-yellow-500/30 px-4 py-1 rounded-full text-sm font-semibold tracking-wide">
                 5+ Years
               </span>{" "}
@@ -58,9 +58,9 @@ export default function Hero() {
 
           <div className="relative z-10 w-fit mx-auto">
             <img
-              src="/foto.png"
+              src="/foto.jpeg"
               alt="Rohmat Sidiq"
-              className="w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-cover rounded-3xl border-4 border-yellow-500/50 p-2 shadow-2xl shadow-yellow-500/20 grayscale hover:grayscale-0 transition duration-500"
+              className="w-64 h-64 md:w-80 md:h-80 lg:w-[450px] lg:h-[450px] object-cover rounded-full border-4 border-yellow-500/50 p-2 shadow-2xl shadow-yellow-500/20 transition duration-500"
             />
 
             {/* ItemStack - Muncul hanya di layar besar agar tidak berantakan */}

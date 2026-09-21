@@ -24,19 +24,19 @@ export default function AboutMe() {
               <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
               <div className="relative bg-gray-800 p-6 rounded-3xl border border-gray-700">
                 <div className="flex items-center gap-4">
-                  <div className="w-20 h-20 rounded-2xl overflow-hidden border-2 border-yellow-500/50 p-1 rotate-3 group-hover:rotate-0 transition-transform duration-300">
+                  <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-yellow-500/50 p-1 rotate-3 group-hover:rotate-0 transition-transform duration-300">
                     <img
-                      src="/foto.png"
+                      src="/foto.jpeg"
                       alt="Rohmat"
-                      className="w-full h-full object-cover rounded-xl shadow-lg"
+                      className="w-full h-full object-cover rounded-full shadow-lg"
                     />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold text-xl uppercase tracking-wider">
-                      Rohmat S.
+                    <h4 className="text-white font-bold text-xl tracking-wider">
+                      Rohmat Sidiq
                     </h4>
                     <p className="text-yellow-500 text-sm font-medium">
-                      Full-stack Developer
+                      Software Engineer
                     </p>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ export default function AboutMe() {
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
                   I'm a{" "}
                   <span className="text-white font-semibold">
-                    Full-Stack JavaScript Developer
+                    Software Engineer
                   </span>{" "}
                   with a mission to bridge the gap between complex backend logic
                   and elegant frontend interfaces.

@@ -32,13 +32,13 @@ export default function Experience() {
       ],
     },
     {
-      company: "Freelance Programmer",
+      company: "Freelance / Personal Projects",
       location: "Sukoharjo, Indonesia",
-      role: "Programmer Web & Mobile",
-      stack: "Full-Stack JS & PHP",
+      role: "Software Engineer",
+      stack: "Full-Stack Javascript & PHP",
       logo: "/code_icon.png",
       points: [
-        "Developed and maintained websites and Android applications using React Native and Laravel",
+        "Developed various web applications and websites using Next.js, React.js, Tailwind CSS, Node.js, Express.js, MySQL, and MongoDB",
       ],
     },
   ];

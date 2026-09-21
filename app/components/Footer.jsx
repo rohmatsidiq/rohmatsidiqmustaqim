@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-20 pb-10 px-5">
+    <footer className="mt-20 pb-10">
       <div className="max-w-5xl mx-auto">
         {/* Main Footer Card */}
         <div className="bg-gray-800/40 backdrop-blur-xl border border-white/5 p-8 md:p-12 rounded-[2.5rem] flex flex-col items-center text-center shadow-2xl relative overflow-hidden">
@@ -53,7 +53,8 @@ export default function Footer() {
 
             {/* Tambahan LinkedIn jika ada */}
             <a
-              href="#"
+              href="https://www.linkedin.com/in/rohmat-sidiq/"
+              target="_blank"
               className="flex items-center gap-2 bg-[#0A66C2]/10 text-[#0A66C2] border border-[#0A66C2]/20 px-6 py-3 rounded-2xl hover:bg-[#0A66C2] hover:text-white transition-all duration-300 font-bold"
             >
               <FaLinkedin className="text-xl" />

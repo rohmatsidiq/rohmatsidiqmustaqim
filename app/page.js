@@ -22,7 +22,7 @@ export default function page() {
       <Hero />
       <AboutMe />
       <Experience />
-      <Certificates />
+      {/* <Certificates /> */}
       <Skill />
       <Project />
       <Footer />
