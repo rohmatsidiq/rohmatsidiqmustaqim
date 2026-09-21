@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ConfigProvider } from "antd";
+import Script from "next/script"; // 1. Import komponen Script dari Next.js
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,7 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Domain resmi Anda untuk acuan URL absolut og-image & metadata
 const siteUrl = "https://rohmatsidiq.com";
 
 export const metadata = {
@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Rohmat Sidiq Mustaqim Portfolio",
     images: [
       {
-        url: "/og-image.jpg", // Tempatkan gambar default di folder public/og-image.jpg (Ukuran saran: 1200x630px)
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Rohmat Sidiq Mustaqim Portfolio",
@@ -75,6 +75,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* 2. Google Analytics Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JSYNLR5DRQ"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JSYNLR5DRQ');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
