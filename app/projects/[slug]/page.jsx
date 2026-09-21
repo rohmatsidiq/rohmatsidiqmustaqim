@@ -12,17 +12,43 @@ import {
 } from "react-icons/fi";
 import Footer from "@/app/components/Footer";
 
+// SEO & OG-Image Dinamis per Project (SSR)
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = projectsData.find((p) => p.slug === slug);
 
   if (!project) {
-    return { title: "Project Not Found" };
+    return {
+      title: "Project Not Found",
+    };
   }
 
+  const pageTitle = `${project.title} - ${project.subtitle || "Case Study"}`;
+  const pageDescription = project.description;
+  const projectImage = project.image; // Menggunakan gambar screenshot project (e.g. /sahabat.jpg)
+
   return {
-    title: `${project.title} - Case Study & Portfolio`,
-    description: project.desc,
+    title: pageTitle,
+    description: pageDescription,
+    openGraph: {
+      title: pageTitle,
+      description: pageDescription,
+      type: "article",
+      images: [
+        {
+          url: projectImage,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: pageDescription,
+      images: [projectImage],
+    },
   };
 }
 
