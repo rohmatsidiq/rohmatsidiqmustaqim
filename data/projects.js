@@ -86,8 +86,8 @@ export const projectsData = [
       "Unclear Monthly Cash Flow: Manual tracking makes it difficult to monitor remaining balances in real time, causing over 40% of households to overspend before month-end.",
     ],
     features: [
-      "Real-Time Cash Flow Overview: Instant dashboard displaying current total balance (Rp 2,925,000), total income (Rp 3,000,000), and total expenses (Rp 75,000).",
-      "Category-Based Expense Breakdown: Visual progress bars categorizing spending into Salary (Gaji), Food (Makanan), and Beverages (Minuman) for quick analysis.",
+      "Real-Time Cash Flow Overview: Instant dashboard displaying current total balance, total income, and total expenses.",
+      "Category-Based Expense Breakdown: Visual progress bars categorizing spending.",
       "Detailed Transaction History & Filtering: Searchable history log with custom filters for income and expenses by date and category.",
       "Secure Profile & OTP Authentication: Verified WhatsApp-based OTP login and Bcrypt password encryption to protect personal financial data.",
     ],

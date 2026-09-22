@@ -42,7 +42,7 @@ export default function Project() {
     },
     {
       title: "LagiBaca",
-      desc: "A ebook reading and audiobook platform with integrated admin panel for content management.",
+      desc: "Ebook and audiobook platform with integrated admin panel for content management.",
       image: "/lagibaca.jpg",
       color: "from-green-900/40 to-green-950",
       imgBg: "bg-green-900/50",
